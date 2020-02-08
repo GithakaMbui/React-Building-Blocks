@@ -5,23 +5,30 @@ class ConditionalRendering extends Component {
     constructor() {
         super()
         this.state = {
-            isLoading: false
+            // isLoading: false
+            unreadMessages: ["a", "b"]
         }
     }
 
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState({
-                isLoading: false
-            })
-        }, 1500
-        )
-    }
+    // componentDidMount() 
+    // {
+    //     setTimeout(() => {
+    //         this.setState({
+    //             isLoading: false
+    //         })
+    //     }, 1500
+    //     )
+    // }
 
     render() {
         return (
             <div>
-                <Conditional isLoading={this.state.isLoading} />
+                {
+                    this.state.unreadMessages.length > 0 ?
+                        <h2>You have {this.state.unreadMessages.length} unread messages!</h2> :
+                        null
+                }
+                {/* <Conditional isLoading={this.state.isLoading} /> */}
             </div>
         )
     }

@@ -15,6 +15,7 @@ import AppTwo from "./components/appTwo";
 import StateApp from "./components/StateApp";
 import CounterApp from "./components/CounterApp";
 import ConditionalRendering from "./components/ConditionalRendering";
+import LoggedInOut from "./components/LoggedInOut";
 
 function MyApp() {
   return (
@@ -93,8 +94,13 @@ function StyleApp() {
 //ReactDOM.render(<AppTwo/>, document.getElementById("root"));
 
 //</h1>ReactDOM.render( < StateApp / > , document.getElementById("root"));
+
 //ReactDOM.render(<CounterApp />, document.getElementById("root"));
-ReactDOM.render(<ConditionalRendering />, document.getElementById("root"));
+
+//ReactDOM.render(<ConditionalRendering />, document.getElementById("root"));
+
+ReactDOM.render(<LoggedInOut />, document.getElementById("root"));
+
 var myNewP = document.createElement("p");
 myNewP.innerHTML = "This is my new paragraph.";
 // If you want your app to work offline and load faster, you can change
