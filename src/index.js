@@ -81,7 +81,7 @@ function StyleApp() {
 
 //ReactDOM.render(<Psalm25 />, document.getElementById("root"));
 
-//ReactDOM.render(<ToDoApp />, document.getElementById("root"));
+ReactDOM.render(<ToDoApp />, document.getElementById("root"));
 
 // ReactDOM.render(<StyleApp/>, document.getElementById("root"));
 
@@ -99,7 +99,7 @@ function StyleApp() {
 
 //ReactDOM.render(<ConditionalRendering />, document.getElementById("root"));
 
-ReactDOM.render(<LoggedInOut />, document.getElementById("root"));
+//ReactDOM.render(<LoggedInOut />, document.getElementById("root"));
 
 var myNewP = document.createElement("p");
 myNewP.innerHTML = "This is my new paragraph.";
