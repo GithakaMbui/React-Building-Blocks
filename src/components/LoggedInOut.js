@@ -13,20 +13,24 @@ class LoggedInOut extends Component {
             loggedIn: true,
             name: "Githaka"
         }
+
+        this.handleClick = this.handleClick.bind(this)
     }
 
-    //this.onHandleChange = this.onHandleChange.bind(this)
-
-    onHandleChange(event) {
-
-
+    handleClick() {
+        this.setState(prevState => {
+            return {
+                loggedIn: !prevState.loggedIn
+            }
+        })
     }
 
     render() {
+        let buttonText = this.state.loggedIn ? "Log out" : "Log in"
         return (
             <div>
                 <hi>Hi {this.state.name} {this.state.loggedIn ? "You are currently logged In" : "You are logged out"}</hi><br /><br />
-                <button onHandleChange=""> Click to {this.state.loggedIn ? "Log out" : "Log in"}</button>
+                <button onClick={this.handleClick}> {buttonText}</button>
             </div>
         )
     }
