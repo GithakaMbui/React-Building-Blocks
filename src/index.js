@@ -14,6 +14,7 @@ import ClassBasedApp from "./components/ClassBasedApp";
 import AppTwo from "./components/appTwo";
 import StateApp from "./components/StateApp";
 import CounterApp from "./components/CounterApp";
+import ConditionalRendering from "./components/ConditionalRendering";
 
 function MyApp() {
   return (
@@ -79,7 +80,7 @@ function StyleApp() {
 
 //ReactDOM.render(<Psalm25 />, document.getElementById("root"));
 
-ReactDOM.render(<ToDoApp />, document.getElementById("root"));
+//ReactDOM.render(<ToDoApp />, document.getElementById("root"));
 
 // ReactDOM.render(<StyleApp/>, document.getElementById("root"));
 
@@ -93,7 +94,7 @@ ReactDOM.render(<ToDoApp />, document.getElementById("root"));
 
 //</h1>ReactDOM.render( < StateApp / > , document.getElementById("root"));
 //ReactDOM.render(<CounterApp />, document.getElementById("root"));
-
+ReactDOM.render(<ConditionalRendering />, document.getElementById("root"));
 var myNewP = document.createElement("p");
 myNewP.innerHTML = "This is my new paragraph.";
 // If you want your app to work offline and load faster, you can change
