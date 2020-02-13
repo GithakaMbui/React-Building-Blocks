@@ -16,6 +16,7 @@ import StateApp from "./components/StateApp";
 import CounterApp from "./components/CounterApp";
 import ConditionalRendering from "./components/ConditionalRendering";
 import LoggedInOut from "./components/LoggedInOut";
+import FetchApi from "./components/FetchApi";
 
 function MyApp() {
   return (
@@ -81,7 +82,7 @@ function StyleApp() {
 
 //ReactDOM.render(<Psalm25 />, document.getElementById("root"));
 
-ReactDOM.render(<ToDoApp />, document.getElementById("root"));
+//ReactDOM.render(<ToDoApp />, document.getElementById("root"));
 
 // ReactDOM.render(<StyleApp/>, document.getElementById("root"));
 
@@ -100,6 +101,8 @@ ReactDOM.render(<ToDoApp />, document.getElementById("root"));
 //ReactDOM.render(<ConditionalRendering />, document.getElementById("root"));
 
 //ReactDOM.render(<LoggedInOut />, document.getElementById("root"));
+
+ReactDOM.render(<FetchApi />, document.getElementById("root"));
 
 var myNewP = document.createElement("p");
 myNewP.innerHTML = "This is my new paragraph.";
