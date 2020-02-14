@@ -17,6 +17,7 @@ import CounterApp from "./components/CounterApp";
 import ConditionalRendering from "./components/ConditionalRendering";
 import LoggedInOut from "./components/LoggedInOut";
 import FetchApi from "./components/FetchApi";
+import Forms from "./components/Forms"
 
 function MyApp() {
   return (
@@ -102,7 +103,9 @@ function StyleApp() {
 
 //ReactDOM.render(<LoggedInOut />, document.getElementById("root"));
 
-ReactDOM.render(<FetchApi />, document.getElementById("root"));
+//ReactDOM.render(<FetchApi />, document.getElementById("root"));
+
+ReactDOM.render(<Forms />, document.getElementById("root"));
 
 var myNewP = document.createElement("p");
 myNewP.innerHTML = "This is my new paragraph.";
