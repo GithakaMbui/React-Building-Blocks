@@ -23,7 +23,7 @@ class Forms extends Component {
 
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 {/* input type/element of a form */}
                 <input type="text" value={this.state.firstName} name="firstName" placeholder="FirstName" onChange={this.handleChange} />
                 <br />
@@ -76,6 +76,8 @@ class Forms extends Component {
                 <h1> {this.state.firstName} {this.state.lastName}</h1>
                 <h2>You are a {this.state.gender} </h2>
                 <h3>Your favourite colour is {this.state.favColor}</h3>
+
+                <button> Submit</button>
 
 
             </form >
